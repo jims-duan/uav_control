@@ -1,0 +1,7 @@
+FUEL返航话题
+rostopic pub /planning/return_home std_msgs/Empty --once
+FUEL继续探索话题
+rostopic pub /planning/resume_explore std_msgs/Empty --once
+
+
+https://github.com/deepglint/FAST_LIO_LOCALIZATION_HUMANOID
