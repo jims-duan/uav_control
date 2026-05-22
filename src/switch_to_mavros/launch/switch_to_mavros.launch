@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="switch_to_mavros" 
+          type="switch_to_mavros_node" 
+          name="switch_to_mavros_node" 
+          output="screen">
+    </node>
+
+    <node pkg="rc_control" 
+          type="rc_control_node" 
+          name="rc_control_node" 
+          output="screen">
+    </node>
+</launch>
