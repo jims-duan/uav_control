@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source /opt/ros/noetic/setup.bash
-source /home/nano/ROS/FUEL/devel/setup.bash
+source /home/nano/ROS/lidar_fuel/devel/setup.bash
 
 # 重启服务
 sudo systemctl restart uav_odom_converter.service
@@ -20,7 +20,7 @@ cleanup() {
 trap cleanup SIGINT SIGTERM
 
 # 运行 roslaunch
-roslaunch exploration_manager exploration大空间.launch
+roslaunch exploration_manager exploration.launch
 
 # 正常情况下 roslaunch 退出后也停止服务
 cleanup

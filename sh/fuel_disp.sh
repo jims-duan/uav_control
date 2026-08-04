@@ -1,0 +1,1 @@
+sudo journalctl -u uav_fuel.service -f -o cat | ccze -A
